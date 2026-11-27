@@ -12,4 +12,6 @@ def get_days_from_today(date):
 
     return date_diff.days
 
-print(get_days_from_today("2022-02-24"))
+
+if __name__ == "__main__":
+    print(get_days_from_today("2022-02-24"))
