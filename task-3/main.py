@@ -1,6 +1,6 @@
 import re
 
-def normalize_phone(phone_number: str):
+def normalize_phone(phone_number: str) -> str:
     """
     Приводить номер телефону до вигляду '+380XXXXXXXXX'.
 
