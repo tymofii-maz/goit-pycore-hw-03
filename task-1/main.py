@@ -10,6 +10,6 @@ def get_days_from_today(date):
     current_date = datetime.today().date()
     date_diff = current_date - input_date
 
-    print(date_diff.days)
+    return date_diff.days
 
-get_days_from_today("2022-02-24")
+print(get_days_from_today("2022-02-24"))
