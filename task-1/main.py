@@ -1,6 +1,6 @@
 from datetime import datetime
 
-def get_days_from_today(date: str):
+def get_days_from_today(date: str) -> int | None:
     """
     Рахує, скільки днів минуло від заданої дати до сьогодні.
 
@@ -18,7 +18,6 @@ def get_days_from_today(date: str):
     date_diff = current_date - input_date
 
     return date_diff.days
-
 
 if __name__ == "__main__":
     print(get_days_from_today("2022-02-24"))
