@@ -1,6 +1,13 @@
 from datetime import datetime
 
-def get_days_from_today(date):
+def get_days_from_today(date: str):
+    """
+    Рахує, скільки днів минуло від заданої дати до сьогодні.
+
+    date - рядок у форматі 'РРРР-ММ-ДД', наприклад '2020-10-09'.
+    Якщо дата в майбутньому, результат буде від'ємним.
+    Якщо формат неправильний, функція повертає None.
+    """
     try:
         input_date = datetime.strptime(date, "%Y-%m-%d").date()
     except (ValueError, TypeError):
